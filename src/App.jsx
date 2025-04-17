@@ -4,10 +4,9 @@ import Header from './components/Header';
 import Gallery from './components/Gallery';
 import ImageModal from './components/ImageModal';
 import galleryData from './data/galleryData';
+import Footer from './components/Footer';
 
 function App() {
-  const [showFrames, setShowFrames] = useState(false);
-  const [autoplay, setAutoplay] = useState(false);
   const [selectedId, setSelectedId] = useState(null);
 
   const selectedItem = galleryData.find((item) => item.id === selectedId);
@@ -25,35 +24,15 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-black text-white p-6">
-      <div className="flex justify-end mb-4 gap-4">
-        <label className="flex items-center gap-2 cursor-pointer">
-          <input
-            type="checkbox"
-            checked={showFrames}
-            onChange={() => setShowFrames(!showFrames)}
+    <div className="flex flex-col min-h-screen bg-black text-white">
+      <div className="flex-grow p-6">
+        <div className="grid md:grid-cols-2 gap-10">
+          <Header />
+          <Gallery
+            images={galleryData}
+            onSelect={(id) => setSelectedId(id)}
           />
-          <span>Show Frames</span>
-        </label>
-
-        <label className="flex items-center gap-2 cursor-pointer">
-          <input
-            type="checkbox"
-            checked={autoplay}
-            onChange={() => setAutoplay(!autoplay)}
-          />
-          <span>Autoplay All</span>
-        </label>
-      </div>
-
-      <div className="grid md:grid-cols-2 gap-10">
-        <Header />
-        <Gallery
-          images={galleryData}
-          showFrames={showFrames}
-          autoplay={autoplay}
-          onSelect={(id) => setSelectedId(id)}
-        />
+        </div>
       </div>
 
       <ImageModal
@@ -62,6 +41,8 @@ function App() {
         onPrev={handlePrev}
         onNext={handleNext}
       />
+
+      <Footer />
     </div>
   );
 }

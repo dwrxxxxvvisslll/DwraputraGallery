@@ -25,20 +25,15 @@ const ImageModal = ({ item, onClose, onPrev, onNext }) => {
           ›
         </button>
 
-        {item.type === 'video' ? (
-          <video
-            src={item.src}
-            controls
-            autoPlay
-            className="w-full max-h-[70vh] object-contain"
-          />
-        ) : (
+        <picture>
+          <source srcSet={item.webp} type="image/webp" />
           <img
-            src={item.src}
+            src={item.full}
             alt={item.alt}
             className="w-full max-h-[70vh] object-contain"
           />
-        )}
+        </picture>
+
         <div className="p-4 text-white text-sm">{item.detail}</div>
       </div>
     </div>

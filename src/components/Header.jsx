@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const Header = () => (
   <div className="flex flex-col items-center text-center text-white font-serif px-4 py-10">
@@ -7,16 +7,19 @@ const Header = () => (
       I'm Dwraputra <br />
     </h1>
     <p className="text-gray-300 text-sm leading-relaxed max-w-md">
-      A wanderer with a camera — chasing light, chasing stories. My name
-      is Wiradana Putra, but in the world of frames and focus, I go by
-      Dwraputra. I find beauty in fleeting glances, quiet streets, and the
-      loud silence of a wedding vow. I shoot weddings — where love speaks
-      in smiles, tears, and the way two hands hold. I shoot the streets —
-      where real life spills out in colors, chaos, and rhythm.
-      Photography, for me, isn’t about perfection. It’s about honesty. A
-      split-second truth, frozen in time. This website is a gallery of
-      what I’ve seen, felt, and lived — not just with my eyes, but with
-      heart. Take a stroll. Let the frames speak. And if they whisper to
+      A wanderer with a camera — chasing light, chasing stories. My name is
+      Wiradana Putra, but in the world of frames and focus, I go by Dwraputra. I
+      find beauty in fleeting glances, quiet streets, and the loud silence of a
+      wedding vow. I shoot weddings — where love speaks in smiles, tears, and
+      the way two hands hold. I shoot the streets — where real life spills out
+      in colors, chaos, and rhythm. Since 2022, I’ve also been part of
+      Tarumenyan as a freelance photographer — capturing the timeless moments of
+      love stories, traditions, and emotions. It’s a journey that shaped not
+      only my portfolio, but also deepened my way of seeing the world through a
+      more intimate, soulful lens. Photography, for me, isn’t about perfection.
+      It’s about honesty. A split-second truth, frozen in time. This website is
+      a gallery of what I’ve seen, felt, and lived — not just with my eyes, but
+      with heart. Take a stroll. Let the frames speak. And if they whisper to
       your soul, let’s make magic together.
     </p>
   </div>

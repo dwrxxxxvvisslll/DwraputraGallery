@@ -7,7 +7,7 @@ const Gallery = ({ images, onSelect }) => {
         <div
           key={id}
           onClick={() => onSelect(id)}
-          className="aspect-square overflow-hidden rounded-md cursor-pointer transition-transform duration-300 hover:scale-105"
+          className="aspect-square overflow-hidden rounded-md cursor-pointer transition-transform duration-300 hover:scale-105 active:scale-95 animate-fadeIn"
         >
           <picture>
             <source srcSet={webp} type="image/webp" />

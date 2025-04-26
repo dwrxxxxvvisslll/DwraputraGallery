@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Gallery from './components/Gallery';
 import ImageModal from './components/ImageModal';
 import galleryData from './data/galleryData';
+import { Link } from 'react-router-dom';
 import Footer from './components/Footer';
 
 function App() {
@@ -29,9 +30,17 @@ function App() {
         <div className="grid md:grid-cols-2 gap-10">
           <Header />
           <Gallery
-            images={galleryData}
+            images={galleryData.slice(0, 9)}
             onSelect={(id) => setSelectedId(id)}
           />
+          <div className="mt-8 text-center">
+            <Link
+            to="/portfolio"
+            className="inline-block bg-white text-black px-6 py-2 rounded-full text-sm font-semibold hover:bg-gray-200 transition"
+            >
+              See More
+            </Link>
+          </div>
         </div>
       </div>
 

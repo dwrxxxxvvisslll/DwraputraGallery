@@ -10,11 +10,10 @@ const DetailPage = () => {
   return (
     <div className="min-h-screen bg-black text-white p-6 flex flex-col items-center">
       <Link to="/" className="mb-4 text-blue-400">← Kembali</Link>
-      {item.type === 'video' ? (
-        <video src={item.src} controls className="max-w-xl w-full rounded" />
-      ) : (
-        <img src={item.src} alt={item.alt} className="max-w-xl w-full rounded" />
-      )}
+      <picture>
+        <source srcSet={item.webp} type="image/webp" />
+        <img src={item.full} alt={item.alt} className="max-w-xl w-full rounded" />
+      </picture>
       <p className="mt-4">{item.detail}</p>
     </div>
   );

@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteBase /
+
+# Kalau minta file / folder asli, biarin aja
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Kalau tidak, arahkan semua ke index.html
+RewriteRule . /index.html [L]

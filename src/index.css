@@ -1,6 +1,4 @@
 @import "tailwindcss";
-@tailwind base;
-@tailwind utilities;
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -9,7 +7,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #000000;  /* Ubah ke hitam penuh */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -28,10 +26,12 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
+  padding: 0;
+  background-color: #000000;  /* Tambahkan background hitam */
   min-width: 320px;
   min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -61,7 +61,7 @@ button:focus-visible {
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
-    background-color: #ffffff;
+    background-color: #000000;  /* Tetap hitam meski di light mode */
   }
   a:hover {
     color: #747bff;

@@ -48,43 +48,39 @@ Website portfolio ini menampilkan karya fotografi Dwraputra dengan fokus pada:
 
 ## 📁 Struktur Proyek
 dwraputraweb/
-├── 📁 public/                 # Static assets
-│   ├── favicon.png            # Website icon
-│   ├── img1.jpg - img70.jpg   # Portfolio images (JPG)
-│   └── img1.webp - img70.webp # Optimized images (WebP)
+├── public/ # Static assets
+│ ├── favicon.png # Website icon
+│ ├── img1.jpg - img70.jpg # Portfolio images (JPG)
+│ └── img1.webp - img70.webp # Optimized images (WebP)
 │
-├── 📁 src/
-│   ├── 📁 components/         # React components
-│   │   ├── Header.jsx         # Hero section + Spotify
-│   │   ├── Gallery.jsx        # Photo gallery grid
-│   │   ├── ImageModal.jsx     # Full-screen image viewer
-│   │   ├── Footer.jsx         # Contact information
-│   │   └── SocialLinks.jsx    # Social media links
-│   │
-│   ├── 📁 pages/              # Route pages
-│   │   ├── DetailPage.jsx     # Individual photo details
-│   │   └── PortfolioPage.jsx  # Complete portfolio view
-│   │
-│   ├── 📁 data/               # Data management
-│   │   └── galleryData.js     # Photo metadata & info
-│   │
-│   ├── 📁 assets/             # Build assets
-│   │   └── react.svg          # React logo
-│   │
-│   ├── App.jsx                # Main application
-│   ├── App.css                # Global styles
-│   ├── index.css              # Base CSS & animations
-│   └── main.jsx               # Application entry point
+├── src/ # Source files
+│ ├── components/ # React components
+│ │ ├── Header.jsx # Hero section + Spotify integration
+│ │ ├── Gallery.jsx # Photo gallery grid
+│ │ ├── ImageModal.jsx # Full-screen image viewer
+│ │ ├── Footer.jsx # Contact information
+│ │ └── SocialLinks.jsx # Social media links
+│ │
+│ ├── pages/ # Route pages
+│ │ ├── DetailPage.jsx # Individual photo details
+│ │ └── PortfolioPage.jsx # Complete portfolio view
+│ │
+│ ├── data/ # Data management
+│ │ └── galleryData.js # Photo metadata & info
+│ │
+│ ├── assets/ # Build assets
+│ │ └── react.svg # React logo
+│ │
+│ ├── App.jsx # Main application
+│ ├── App.css # Global styles
+│ └── main.jsx # Application entry point
 │
-├── 📄 Configuration Files
-│   ├── package.json           # Dependencies & scripts
-│   ├── vite.config.js         # Vite configuration
-│   ├── eslint.config.js       # ESLint rules
-│   ├── .gitignore             # Git ignore rules
-│   └── .htaccess              # Apache server config
-│
-└── 📄 Documentation
-└── README.md              #
+├── vite.config.js # Vite configuration
+├── eslint.config.js # ESLint rules
+├── .gitignore # Git ignore rules
+├── .htaccess # Apache server config
+├── package.json # Dependencies & scripts
+└── README.md # Project documentation
 
 
 ## 🚀 Instalasi & Setup
